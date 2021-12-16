@@ -1,0 +1,35 @@
+Welcome the User
+Define main function
+  1.Set counter to be a global variable
+  2.And assign value 1 for the first round
+Define guetGuess function, add parameters first and last
+  1.Import random module, make number global variable and create random number with randint function.
+Define newRound function
+  1.print round "counter" out of 7, if counter is less than 7 (it is set to 1)
+  2.Add personalization with hyphens.
+  else: (when counter is greater than 7 and the player has wasted all rounds.)
+  1. Print the number was (number variable)
+  2. Print input to let user play again or quit the game.(see function "playAgain")
+     1. If user pressed "y": call the main function and restart game from beginning.
+     2. Elif again equal "y", quit the game.
+Define guessWin variable:
+  1. Add number, guess parameters to variables.
+  2. Establish the main conditionals for the player's guess:
+    1. If guess is less than 0 or greater than 100: Prompt user to enter guess again and call this function.
+    2. If guess is smaller than number: Print "guess" is too low... and add 1 to counter to begin a new round...
+    3. If guess is greater than number: Print "guess" is too high... and add 1 to counter to begin a new round...
+    4. If guess is equal to number: Print "Congratulations, you guessed the mistery number" and prompt user to start again or quit.(see function "playAgain")
+Define guessWin2 function (prompts user for guess after the first round)
+  1. Asks user for guess.
+  2. Calls guessWin to verify.
+Define playAgain (asks the user if they want to play again if 1. they have wasted all rounds or 2. they have guessed the numbe and wish to play again.)
+  1. Prompt user for input:
+    1. If again equals yes: call main function
+    2. If again equal "n": quit the game through quit() built-in function
+Define mainCall() function:  Calls the all other functions...
+  main()
+  getGuess(1, 100) - Here I passed the arguments I want to first and last which are 1 and 100.
+  newRound() - Starts new round.
+  guess = int(input(" Enter your guess (1-100): ")): This is where I get the arguments for the first round.
+  guessWin(number, guess) - Guess and the rest is automatic.
+Call mainCall to execute all other functions.
